@@ -19,5 +19,6 @@ if (instance_exists(obj_players))
 	draw_text(960,_linea,"mueve_eje_x: "+string(obj_players.mueve_eje_x)); _linea += _i;
 	draw_text(960,_linea,"velocidad x: "+string(obj_players.x-obj_players.xprevious)); _linea += _i;
 	draw_text(960,_linea,"velocidad y: "+string(obj_players.y-obj_players.yprevious)); _linea += _i;
+	draw_text(960,_linea,"en el suelo: "+string(obj_players.en_el_suelo)); _linea += _i;
 	 _linea += _i;
 }
