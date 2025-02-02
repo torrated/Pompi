@@ -3,12 +3,23 @@
 // movimiento
 if (instance_exists(obj_controllers))
 {
-	var _mueve_x = obj_controllers.eje_x * velocidad_x;
-	var _mueve_y = obj_controllers.eje_y * velocidad_y;
-	if (obj_controllers.ataque)
-		show_message("ataque");//Debug
-	if (obj_controllers.salto)
-		show_message("salto");// debug
+	// eje X
+	mueve_eje_x = obj_controllers.eje_x * velocidad_x;
+	
+	// eje Y
+	velocidad_y += obj_settings.gravedad;
+	velocidad_y = clamp(velocidad_y,-altura_salto,obj_settings.gravedad);
+	velocidad_y -= obj_controllers.salto * altura_salto;
 		
-	move_and_collide(_mueve_x,_mueve_y,obj_colisiones);
+	move_and_collide(mueve_eje_x,
+					 velocidad_y,
+					 obj_colisiones);
+}
+
+// ataque
+if (instance_exists(obj_controllers))
+{
+	if (obj_controllers.ataque)
+	{
+	}
 }
