@@ -2,7 +2,8 @@
 
 objetos_a_cargar = [
 		obj_controllers,
-		obj_settings
+		obj_settings,
+		obj_debug
 ];
 
-espera_carga_completa = 3 * 60; // 60 = 1 segundo
+espera_carga_completa = 1 * 60; // 60 = 1 segundo
