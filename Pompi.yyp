@@ -35,7 +35,8 @@
   },
   "name":"Pompi",
   "resources":[
-    {"id":{"name":"obj_colisiones","path":"objects/obj_colisiones/obj_colisiones.yy",},},
+    {"id":{"name":"obj_colisiones_plataformas","path":"objects/obj_colisiones_plataformas/obj_colisiones_plataformas.yy",},},
+    {"id":{"name":"obj_colisiones_todas","path":"objects/obj_colisiones_todas/obj_colisiones_todas.yy",},},
     {"id":{"name":"obj_controllers","path":"objects/obj_controllers/obj_controllers.yy",},},
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},},
     {"id":{"name":"obj_pantalla_de_carga","path":"objects/obj_pantalla_de_carga/obj_pantalla_de_carga.yy",},},
