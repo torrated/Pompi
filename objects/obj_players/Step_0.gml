@@ -11,7 +11,10 @@ else
 if (i_cooldown_pompas < cooldown_pompas)
 	i_cooldown_pompas -= 1;
 if (i_cooldown_pompas == 0)
+{
 	i_cooldown_pompas = cooldown_pompas;
+	sprite_index = sprite_quieto;
+}
 
 
 
@@ -46,5 +49,7 @@ if (instance_exists(obj_controllers))
 		var _pompa = instance_create_layer(x,y,"Pompas",obj_pompa);
 		_pompa.sentido = image_xscale;
 		i_cooldown_pompas -= 1;
+		if (sprite_ataque <> noone)
+			sprite_index = sprite_ataque;
 	}
 }

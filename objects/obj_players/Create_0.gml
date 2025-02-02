@@ -12,3 +12,7 @@ velocidad_y = velocidad_y_inicial;
 en_el_suelo = false;
 cooldown_pompas = 15;
 i_cooldown_pompas = cooldown_pompas;
+
+sprite_quieto = noone;
+sprite_movimiento = noone;
+sprite_ataque = noone;
