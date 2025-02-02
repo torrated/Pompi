@@ -1,2 +1,2 @@
 /// @description version
-draw_text(1160,745,"v0.1");
+draw_text(1160,745,"v0.2");
