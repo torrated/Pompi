@@ -4,7 +4,18 @@
 if (velocidad_horizontal > 1)
 {
 	velocidad_horizontal /= 2;
-	move_and_collide(velocidad_horizontal * sentido,0,global.array_colisiones_normal);
+	var _array_colisiones = global.array_colisiones_normal;
+	array_insert(_array_colisiones,-1,obj_enemigo); 
+	var _lista = move_and_collide(velocidad_horizontal * sentido,0,_array_colisiones);
+	for (var _i = 0; _i < array_length(_lista); _i++)
+	{
+		if (_lista[_i].object_index == obj_enemigo)
+		{
+			enemigo = _lista[_i];
+			instance_destroy(_lista[_i],true);
+			sprite_index = spr_pompa_enemigo;
+		}
+	}
 }
 else
 {
