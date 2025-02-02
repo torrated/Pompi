@@ -10,4 +10,5 @@ else
 {
 	velocidad_horizontal = 0;
 	y -= velocidad_ascenso;
-}
+}if ((velocidad_horizontal == 0) && (y == yprevious))
+	alarm[0] = 1;
