@@ -12,7 +12,10 @@ if (velocidad_horizontal > 1)
 		if (_lista[_i].object_index == obj_enemigo)
 		{
 			enemigo = _lista[_i];
-			instance_destroy(_lista[_i],true);
+			x = enemigo.x;
+			y = enemigo.y-(enemigo.sprite_height/2);
+			puntos = enemigo.puntos;
+			instance_destroy(enemigo,true);
 			sprite_index = spr_pompa_enemigo;
 		}
 	}
