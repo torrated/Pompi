@@ -27,26 +27,36 @@ if ((object_index == obj_player_1) && instance_exists(obj_controllers))
 	_origen_y = obj_controllers.salto;
 }
 
-//if (instance_exists(obj_controllers))
-//{
-	// eje X
-	mueve_eje_x = _origen_x * velocidad_x;
+
+// eje X
+mueve_eje_x = _origen_x * velocidad_x;
 	
-	// eje Y
-	velocidad_y += obj_settings.gravedad;
-	velocidad_y = clamp(velocidad_y,-altura_salto,obj_settings.gravedad);
-	if (en_el_suelo)
-		velocidad_y -= _origen_y * altura_salto;
+// eje Y
+velocidad_y += obj_settings.gravedad;
+velocidad_y = clamp(velocidad_y,-altura_salto,obj_settings.gravedad);
+if (en_el_suelo)
+	velocidad_y -= _origen_y * altura_salto;
 		
-	if (velocidad_y < 0)
-		move_and_collide(mueve_eje_x,
-						 velocidad_y,
-						 global.array_colisiones_salto);
-	else
-		move_and_collide(mueve_eje_x,
+if (velocidad_y < 0)
+	move_and_collide(mueve_eje_x,
 						velocidad_y,
-						global.array_colisiones_normal);
-//}
+						global.array_colisiones_salto,
+						undefined,
+						undefined,
+						undefined,
+						velocidad_x_inicial,
+						velocidad_y_inicial
+						);
+else
+	move_and_collide(mueve_eje_x,
+					velocidad_y,
+					global.array_colisiones_normal,
+					undefined,
+					undefined,
+					undefined,
+					velocidad_x_inicial,
+					velocidad_y_inicial
+					);
 
 
 // sprites
