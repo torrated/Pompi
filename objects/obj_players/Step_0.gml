@@ -6,6 +6,15 @@ if (collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom+velocidad_y,ob
 else
 	en_el_suelo = false;
 
+
+// cooldown
+if (i_cooldown_pompas < cooldown_pompas)
+	i_cooldown_pompas -= 1;
+if (i_cooldown_pompas == 0)
+	i_cooldown_pompas = cooldown_pompas;
+
+
+
 // movimiento
 if (instance_exists(obj_controllers))
 {
@@ -23,10 +32,19 @@ if (instance_exists(obj_controllers))
 					 obj_colisiones);
 }
 
+
+// sprites
+if (mueve_eje_x <> 0)
+	image_xscale = sign(mueve_eje_x);
+
+
 // ataque
 if (instance_exists(obj_controllers))
 {
-	if (obj_controllers.ataque)
+	if ((obj_controllers.ataque) && (i_cooldown_pompas == cooldown_pompas))
 	{
+		var _pompa = instance_create_layer(x,y,"Pompas",obj_pompa);
+		_pompa.sentido = image_xscale;
+		i_cooldown_pompas -= 1;
 	}
 }

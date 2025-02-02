@@ -19,7 +19,7 @@
   "height":48,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"aa2c026a-34c0-4ed1-9a3a-1df864b2dfa0","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"aa2c026a-34c0-4ed1-9a3a-1df864b2dfa0","opacity":50.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"aa2c026a-34c0-4ed1-9a3a-1df864b2dfa0","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"aa2c026a-34c0-4ed1-9a3a-1df864b2dfa0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_pompa",
   "nineSlice":null,
