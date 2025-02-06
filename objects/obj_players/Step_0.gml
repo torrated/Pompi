@@ -26,6 +26,11 @@ if ((object_index == obj_player_1) && instance_exists(obj_controllers))
 	_origen_x = obj_controllers.eje_x;
 	_origen_y = obj_controllers.salto;
 }
+if ((object_index == obj_enemigo) && tecla_virtual_salto && en_el_suelo)
+{
+	_origen_y = tecla_virtual_salto;
+	tecla_virtual_salto = 0;
+}
 
 
 // eje X
