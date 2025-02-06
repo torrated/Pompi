@@ -1,0 +1,12 @@
+/// @function                prc_muestra_informacion(_instancia)
+/// @description             muestra cierta informacion
+/// @param {Id.Instance}     _instancia    The unique instance ID value of the instance to check.
+/// @param {Asset.GMObject}  object_id  The object index to be checked against.
+/// @return {Bool}
+
+
+enum ESTADOS_POSIBLES
+{
+    NORMAL,
+	MUERTO
+};
