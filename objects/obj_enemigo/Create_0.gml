@@ -13,3 +13,5 @@ velocidad_x_inicial = 3;
 
 contador_idle_inicial = 30; // 60 = 1 segundo
 contador_idle = contador_idle_inicial;
+
+estado = ESTADOS.IDLE;
