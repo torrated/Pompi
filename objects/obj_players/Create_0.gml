@@ -18,3 +18,5 @@ sprite_movimiento = noone;
 sprite_ataque = noone;
 
 tecla_virtual_salto = 0;
+
+vidas = 1;
