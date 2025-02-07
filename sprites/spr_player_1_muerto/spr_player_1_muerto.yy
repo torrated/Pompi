@@ -23,7 +23,7 @@
   ],
   "name":"spr_player_1_muerto",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"Personajes",
     "path":"folders/Sprites/Personajes.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":64,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
