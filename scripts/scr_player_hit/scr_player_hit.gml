@@ -2,18 +2,15 @@
 /// @description             ejecuta la accion cuando el jugador es alcanzado por un enemigo
 /// @param {Id.Instance}     _player    La instancia del player
 
-function scr_player_hit(_player){
-	instance_destroy(_player,false);
+function scr_player_hit(_player)
+{
+	//cambia el estado del player
+	_player.estado = ESTADOS.MUERTO;
 	
 	//poner todo en pausa
-	
-	//cambiar el sprite
-	
-	//esperar
+	if (instance_exists(obj_settings))
+		obj_settings.pausa = true;
 	
 	//reducir las vidas en 1
-	
-	//reiniciar la sala si quedan vidas
-	
-	//reiniciar el juego si no quedan vidas
+	_player.vidas -= 1;
 }
