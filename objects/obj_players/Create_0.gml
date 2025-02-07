@@ -20,3 +20,11 @@ sprite_ataque = noone;
 tecla_virtual_salto = 0;
 
 vidas = 1;
+
+enum ESTADOS
+{
+    NORMAL,
+	IDLE,
+	SALTAR
+};
+estado = ESTADOS.NORMAL;
