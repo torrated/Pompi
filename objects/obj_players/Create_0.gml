@@ -26,6 +26,7 @@ enum ESTADOS
 {
     NORMAL,
 	IDLE,
-	SALTAR
+	SALTAR,
+	MUERTO
 };
 estado = ESTADOS.NORMAL;
