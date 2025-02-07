@@ -64,7 +64,7 @@ else
 					);
 
 
-// sprites
+// sprites de sentido
 if (mueve_eje_x <> 0)
 	image_xscale = sign(mueve_eje_x);
 
