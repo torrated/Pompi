@@ -27,6 +27,7 @@ enum ESTADOS
     NORMAL,
 	IDLE,
 	SALTAR,
-	MUERTO
+	MUERTO,
+	ATAQUE
 };
 estado = ESTADOS.NORMAL;
