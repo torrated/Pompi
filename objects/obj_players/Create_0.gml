@@ -16,6 +16,7 @@ i_cooldown_pompas = cooldown_pompas;
 sprite_quieto = noone;
 sprite_movimiento = noone;
 sprite_ataque = noone;
+sprite_muerto = noone;
 
 tecla_virtual_salto = 0;
 
