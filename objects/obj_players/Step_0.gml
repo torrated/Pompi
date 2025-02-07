@@ -1,5 +1,10 @@
 /// @description 
 
+// si el juego está en pausa, no se mueven 
+if (instance_exists(obj_settings) && obj_settings.pausa) exit;
+
+
+
 // estado
 if (collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom+velocidad_y,global.array_colisiones_normal,false,false))
 	en_el_suelo = true;
@@ -13,7 +18,7 @@ if (i_cooldown_pompas < cooldown_pompas)
 if (i_cooldown_pompas == 0)
 {
 	i_cooldown_pompas = cooldown_pompas;
-	sprite_index = sprite_quieto;
+	estado = ESTADOS.NORMAL;
 }
 
 
@@ -64,7 +69,7 @@ else
 					);
 
 
-// sprites
+// sprites de sentido
 if (mueve_eje_x <> 0)
 	image_xscale = sign(mueve_eje_x);
 
@@ -78,6 +83,6 @@ if ((object_index == obj_player_1) && instance_exists(obj_controllers))
 		_pompa.sentido = image_xscale;
 		i_cooldown_pompas -= 1;
 		if (sprite_ataque <> noone)
-			sprite_index = sprite_ataque;
+			estado = ESTADOS.ATAQUE;
 	}
 }
