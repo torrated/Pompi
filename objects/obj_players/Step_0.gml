@@ -1,5 +1,10 @@
 /// @description 
 
+// si el juego está en pausa, no se mueven 
+if (instance_exists(obj_settings) && obj_settings.pausa) exit;
+
+
+
 // estado
 if (collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom+velocidad_y,global.array_colisiones_normal,false,false))
 	en_el_suelo = true;

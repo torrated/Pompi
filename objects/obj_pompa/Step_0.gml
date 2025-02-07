@@ -1,5 +1,6 @@
 /// @description 
 
+if (instance_exists(obj_settings) && obj_settings.pausa) exit;
 
 if (velocidad_horizontal > 1)
 {
