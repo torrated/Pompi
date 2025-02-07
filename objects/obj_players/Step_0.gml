@@ -13,7 +13,7 @@ if (i_cooldown_pompas < cooldown_pompas)
 if (i_cooldown_pompas == 0)
 {
 	i_cooldown_pompas = cooldown_pompas;
-	sprite_index = sprite_quieto;
+	estado = ESTADOS.NORMAL;
 }
 
 
@@ -78,6 +78,6 @@ if ((object_index == obj_player_1) && instance_exists(obj_controllers))
 		_pompa.sentido = image_xscale;
 		i_cooldown_pompas -= 1;
 		if (sprite_ataque <> noone)
-			sprite_index = sprite_ataque;
+			estado = ESTADOS.ATAQUE;
 	}
 }
