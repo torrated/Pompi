@@ -1,6 +1,6 @@
 /// @description
 
-// version
+// VERSION
 var _color = draw_get_color();
 var _align = draw_get_halign();
 
@@ -8,7 +8,21 @@ draw_set_color(c_white);
 draw_text(1160,745,"v0.4");
 
 
-// pause
+// NIVEL
+if (room <> Pantalla_de_Carga)
+{
+	var _outline = 1.1;
+	var _nivel = room_get_name(room);
+	_nivel = string_replace_all(_nivel,"Nivel_","");
+	draw_set_color(c_black);
+	draw_text_transformed(29,58,_nivel,2*_outline,2*_outline,0);
+	draw_set_color(c_yellow);
+	draw_text_transformed(30,60,_nivel,2,2,0);
+}
+
+
+
+// PAUSE
 if (instance_exists(obj_settings) && obj_settings.pantalla_pausa)
 {
 	draw_set_color(c_white);
@@ -50,7 +64,6 @@ if (instance_exists(obj_player_2) && (room <> Pantalla_de_Carga))
 		draw_circle(943-(_i*31),750,16,true);
 	}
 }
-
 if (!instance_exists(obj_player_2) && (room <> Pantalla_de_Carga))
 {
 	draw_set_color(c_aqua);
