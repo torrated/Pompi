@@ -1,7 +1,5 @@
 /// @description
 
-var todo_cargado = true;
-
 for (var _i = 0; _i < array_length(objetos_a_cargar); _i++)
 {
 	if (instance_number(objetos_a_cargar[_i]) <= 0)
@@ -10,5 +8,6 @@ for (var _i = 0; _i < array_length(objetos_a_cargar); _i++)
 
 if (todo_cargado)
 {
+	muestra_carga_completa = true;
 	alarm[0] = 1;
 }
