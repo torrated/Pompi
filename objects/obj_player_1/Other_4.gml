@@ -1,5 +1,7 @@
 /// @description 
 
+event_inherited();
+
 if (instance_exists(obj_posicion_player1))
 {
 	x = obj_posicion_player1.x;

@@ -10,7 +10,7 @@ if (velocidad_horizontal > 1)
 	var _lista = move_and_collide(velocidad_horizontal * sentido,0,_array_colisiones);
 	for (var _i = 0; _i < array_length(_lista); _i++)
 	{
-		if (_lista[_i].object_index == obj_enemigo)
+		if ((_lista[_i].object_index == obj_enemigo) && (puntos == 0))
 		{
 			enemigo = _lista[_i];
 			x = enemigo.x;

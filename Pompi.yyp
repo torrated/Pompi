@@ -41,6 +41,8 @@
     {"id":{"name":"obj_controllers","path":"objects/obj_controllers/obj_controllers.yy",},},
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},},
     {"id":{"name":"obj_enemigo","path":"objects/obj_enemigo/obj_enemigo.yy",},},
+    {"id":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},},
+    {"id":{"name":"obj_pantalla_completa","path":"objects/obj_pantalla_completa/obj_pantalla_completa.yy",},},
     {"id":{"name":"obj_pantalla_de_carga","path":"objects/obj_pantalla_de_carga/obj_pantalla_de_carga.yy",},},
     {"id":{"name":"obj_player_1","path":"objects/obj_player_1/obj_player_1.yy",},},
     {"id":{"name":"obj_players","path":"objects/obj_players/obj_players.yy",},},
@@ -49,6 +51,7 @@
     {"id":{"name":"obj_puntos","path":"objects/obj_puntos/obj_puntos.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"Nivel_1","path":"rooms/Nivel_1/Nivel_1.yy",},},
+    {"id":{"name":"Nivel_2","path":"rooms/Nivel_2/Nivel_2.yy",},},
     {"id":{"name":"Pantalla_de_Carga","path":"rooms/Pantalla_de_Carga/Pantalla_de_Carga.yy",},},
     {"id":{"name":"scr_animacion1","path":"scripts/scr_animacion1/scr_animacion1.yy",},},
     {"id":{"name":"scr_path_1","path":"scripts/scr_path_1/scr_path_1.yy",},},
@@ -67,6 +70,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Pantalla_de_Carga","path":"rooms/Pantalla_de_Carga/Pantalla_de_Carga.yy",},},
     {"roomId":{"name":"Nivel_1","path":"rooms/Nivel_1/Nivel_1.yy",},},
+    {"roomId":{"name":"Nivel_2","path":"rooms/Nivel_2/Nivel_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
