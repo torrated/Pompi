@@ -1,5 +1,9 @@
 /// @description 
 
+// si el juego está en pausa, no se mueven 
+if (instance_exists(obj_settings) && obj_settings.pausa) exit;
+
+
 // Inherit the parent event
 event_inherited();
 

@@ -16,5 +16,20 @@ i_cooldown_pompas = cooldown_pompas;
 sprite_quieto = noone;
 sprite_movimiento = noone;
 sprite_ataque = noone;
+sprite_muerto = noone;
 
 tecla_virtual_salto = 0;
+
+vidas = 1;
+
+enum ESTADOS
+{
+    NORMAL,
+	IDLE,
+	SALTAR,
+	MUERTO,
+	ATAQUE
+};
+estado = ESTADOS.NORMAL;
+
+puntos = 0;
