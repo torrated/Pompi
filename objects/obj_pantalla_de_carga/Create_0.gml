@@ -8,3 +8,5 @@ objetos_a_cargar = [
 ];
 
 espera_carga_completa = 1 * 60; // 60 = 1 segundo
+todo_cargado = true;
+muestra_carga_completa = false;
