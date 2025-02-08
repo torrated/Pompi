@@ -12,7 +12,7 @@ else
 	en_el_suelo = false;
 
 
-// cooldown
+// cooldown para las pompas
 if (i_cooldown_pompas < cooldown_pompas)
 	i_cooldown_pompas -= 1;
 if (i_cooldown_pompas == 0)
