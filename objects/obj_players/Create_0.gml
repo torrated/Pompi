@@ -31,3 +31,5 @@ enum ESTADOS
 	ATAQUE
 };
 estado = ESTADOS.NORMAL;
+
+puntos = 0;

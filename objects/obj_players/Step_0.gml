@@ -81,6 +81,7 @@ if ((object_index == obj_player_1) && instance_exists(obj_controllers))
 	{
 		var _pompa = instance_create_layer(x,y,"Pompas",obj_pompa);
 		_pompa.sentido = image_xscale;
+		_pompa.player = self;
 		i_cooldown_pompas -= 1;
 		if (sprite_ataque <> noone)
 			estado = ESTADOS.ATAQUE;
