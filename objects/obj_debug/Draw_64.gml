@@ -16,7 +16,7 @@ with (obj_controllers)
 with (obj_player_1)
 {
 	draw_text(960,_linea,"obj_player_1"); _linea += _i;
-	draw_text(960,_linea,"vidas: "+string(vidas)); _linea += _i;
+	//draw_text(960,_linea,"vidas: "+string(vidas)); _linea += _i;
 	draw_text(960,_linea,"altura_salto: "+string(altura_salto)); _linea += _i;
 	draw_text(960,_linea,"velocidad_y: "+string(velocidad_y)); _linea += _i;
 
