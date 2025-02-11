@@ -16,7 +16,8 @@ if (velocidad_horizontal > 1)
 			x = enemigo.x;
 			y = enemigo.y-(enemigo.sprite_height/2);
 			puntos = enemigo.puntos;
-			instance_destroy(enemigo,true);
+			//instance_destroy(enemigo,true);
+			instance_deactivate_object(enemigo);
 			sprite_index = spr_pompa_enemigo;
 		}
 	}
@@ -24,7 +25,7 @@ if (velocidad_horizontal > 1)
 else
 {
 	velocidad_horizontal = 0;
-	move_and_collide(0,-velocidad_ascenso,global.array_colisiones_normal);
+	move_and_collide(0,-velocidad_ascenso,obj_colisiones_superior);
 }
 
 
