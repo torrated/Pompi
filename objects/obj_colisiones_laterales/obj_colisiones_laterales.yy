@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_colisiones_todas",
+  "%Name":"obj_colisiones_laterales",
   "eventList":[],
   "managed":true,
-  "name":"obj_colisiones_todas",
+  "name":"obj_colisiones_laterales",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"colisiones",
+    "path":"folders/Objects/colisiones.yy",
   },
   "parentObjectId":null,
   "persistent":false,

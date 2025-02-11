@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_colisiones_plataformas",
+  "%Name":"obj_colisiones_superior",
   "eventList":[],
   "managed":true,
-  "name":"obj_colisiones_plataformas",
+  "name":"obj_colisiones_superior",
   "overriddenProperties":[],
   "parent":{
     "name":"colisiones",
