@@ -47,6 +47,7 @@
     {"id":{"name":"obj_pantalla_completa","path":"objects/obj_pantalla_completa/obj_pantalla_completa.yy",},},
     {"id":{"name":"obj_pantalla_de_carga","path":"objects/obj_pantalla_de_carga/obj_pantalla_de_carga.yy",},},
     {"id":{"name":"obj_player_1","path":"objects/obj_player_1/obj_player_1.yy",},},
+    {"id":{"name":"obj_player_2","path":"objects/obj_player_2/obj_player_2.yy",},},
     {"id":{"name":"obj_players","path":"objects/obj_players/obj_players.yy",},},
     {"id":{"name":"obj_pompa","path":"objects/obj_pompa/obj_pompa.yy",},},
     {"id":{"name":"obj_posicion_player1","path":"objects/obj_posicion_player1/obj_posicion_player1.yy",},},
