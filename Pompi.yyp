@@ -44,6 +44,7 @@
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},},
     {"id":{"name":"obj_enemigo","path":"objects/obj_enemigo/obj_enemigo.yy",},},
     {"id":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},},
+    {"id":{"name":"obj_muestra_nivel","path":"objects/obj_muestra_nivel/obj_muestra_nivel.yy",},},
     {"id":{"name":"obj_pantalla_completa","path":"objects/obj_pantalla_completa/obj_pantalla_completa.yy",},},
     {"id":{"name":"obj_pantalla_de_carga","path":"objects/obj_pantalla_de_carga/obj_pantalla_de_carga.yy",},},
     {"id":{"name":"obj_player_1","path":"objects/obj_player_1/obj_player_1.yy",},},
