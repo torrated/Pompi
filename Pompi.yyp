@@ -58,6 +58,7 @@
     {"id":{"name":"scr_animacion1","path":"scripts/scr_animacion1/scr_animacion1.yy",},},
     {"id":{"name":"scr_path_1","path":"scripts/scr_path_1/scr_path_1.yy",},},
     {"id":{"name":"scr_player_hit","path":"scripts/scr_player_hit/scr_player_hit.yy",},},
+    {"id":{"name":"snd_pop","path":"sounds/snd_pop/snd_pop.yy",},},
     {"id":{"name":"spr_colisiones","path":"sprites/spr_colisiones/spr_colisiones.yy",},},
     {"id":{"name":"spr_enemigo_idle","path":"sprites/spr_enemigo_idle/spr_enemigo_idle.yy",},},
     {"id":{"name":"spr_enemigo","path":"sprites/spr_enemigo/spr_enemigo.yy",},},
