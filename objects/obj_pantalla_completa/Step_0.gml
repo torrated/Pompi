@@ -2,6 +2,10 @@
 
 if (pantalla_completa)
 {
+	if (instance_exists(obj_player_1))
+		obj_player_1.puntos += puntos_player_1;
+	if (instance_exists(obj_player_2))
+		obj_player_2.puntos += puntos_player_2;
 	room_goto_next();
 }
 
