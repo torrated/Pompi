@@ -11,3 +11,5 @@ enemigo = noone;
 
 player = noone;
 puntos = 0;
+
+alarm[1] = 1;
