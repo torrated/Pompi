@@ -10,7 +10,6 @@ if (enemigo <> noone)
 			obj_pantalla_completa.puntos_player_1 += puntos;
 		if (player.object_index == obj_player_2)
 			obj_pantalla_completa.puntos_player_2 += puntos;
-		//player.puntos += puntos;
 	}
 }
 instance_destroy(self,true);
