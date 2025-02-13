@@ -5,7 +5,7 @@ var _color = draw_get_color();
 var _align = draw_get_halign();
 
 draw_set_color(c_white);
-draw_text(1160,745,"v0.4");
+draw_text(975,745,"v0.5");
 
 
 // NIVEL
@@ -36,7 +36,7 @@ if (instance_exists(obj_player_1) && (room <> Pantalla_de_Carga))
 	draw_set_color(c_lime);
 	draw_text_transformed(200,0,"1UP",2,2,0);
 	draw_set_color(c_white);
-	draw_text_transformed(200,30,string(obj_player_1.puntos),2,2,0);
+	draw_text_transformed(200,30,string(obj_player_1.puntos+obj_pantalla_completa.puntos_player_1),2,2,0);
 	
 	for (var _i = 0; _i < obj_player_1.vidas; _i++)
 	{
@@ -54,7 +54,7 @@ if (instance_exists(obj_player_2) && (room <> Pantalla_de_Carga))
 	draw_set_color(c_aqua);
 	draw_text_transformed(1200,0,"2UP",2,2,0);
 	draw_set_color(c_white);
-	draw_text_transformed(1200,30,string(obj_player_2.puntos),2,2,0);
+	draw_text_transformed(1200,30,string(obj_player_2.puntos+obj_pantalla_completa.puntos_player_2),2,2,0);
 	
 	for (var _i = 0; _i < obj_player_2.vidas; _i++)
 	{

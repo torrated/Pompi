@@ -6,8 +6,8 @@
   "name":"obj_colisiones_plataformas",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"colisiones",
+    "path":"folders/Objects/colisiones.yy",
   },
   "parentObjectId":null,
   "persistent":false,

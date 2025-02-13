@@ -1,5 +1,5 @@
 /// @function				scr_path_1
-/// @param {obj_enemigo}	_enemigo	El enemigo que seguirá la ruta
+/// @param {Asset.Instance}	_enemigo	El enemigo que seguirá la ruta
 /// @description			Ruta sencilla alrededor del nivel
 
 function scr_path_1(_enemigo)
@@ -7,7 +7,7 @@ function scr_path_1(_enemigo)
 	if (_enemigo.estado == ESTADOS.NORMAL)
 	{
 		var _sentido = _enemigo.image_xscale;
-		var _resultado = move_and_collide(_sentido*_enemigo.velocidad_x_inicial,0,[obj_colisiones_plataformas,obj_colisiones_todas]);
+		var _resultado = move_and_collide(_sentido*_enemigo.velocidad_x_inicial,0,global.array_colisiones_normal);
 	
 		var _velocidad_total = abs(_enemigo.x-_enemigo.xprevious) + abs(_enemigo.y-_enemigo.yprevious);
 	
