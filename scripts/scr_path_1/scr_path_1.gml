@@ -1,5 +1,5 @@
 /// @function				scr_path_1
-/// @param {obj_enemigo}	_enemigo	El enemigo que seguirá la ruta
+/// @param {Asset.Instance}	_enemigo	El enemigo que seguirá la ruta
 /// @description			Ruta sencilla alrededor del nivel
 
 function scr_path_1(_enemigo)
