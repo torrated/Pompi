@@ -59,6 +59,7 @@
     {"id":{"name":"spr_enemigo_idle","path":"sprites/spr_enemigo_idle/spr_enemigo_idle.yy",},},
     {"id":{"name":"spr_enemigo","path":"sprites/spr_enemigo/spr_enemigo.yy",},},
     {"id":{"name":"spr_player_1_ataque","path":"sprites/spr_player_1_ataque/spr_player_1_ataque.yy",},},
+    {"id":{"name":"spr_player_1_corriendo","path":"sprites/spr_player_1_corriendo/spr_player_1_corriendo.yy",},},
     {"id":{"name":"spr_player_1_muerto","path":"sprites/spr_player_1_muerto/spr_player_1_muerto.yy",},},
     {"id":{"name":"spr_player_1","path":"sprites/spr_player_1/spr_player_1.yy",},},
     {"id":{"name":"spr_pompa_enemigo","path":"sprites/spr_pompa_enemigo/spr_pompa_enemigo.yy",},},
