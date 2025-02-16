@@ -10,8 +10,8 @@
   "name":"obj_player_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"caracteres",
+    "path":"folders/Objects/caracteres.yy",
   },
   "parentObjectId":{
     "name":"obj_players",
@@ -38,6 +38,9 @@
     "name":"spr_player_1",
     "path":"sprites/spr_player_1/spr_player_1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_player_1",
+    "path":"sprites/spr_player_1/spr_player_1.yy",
+  },
   "visible":true,
 }

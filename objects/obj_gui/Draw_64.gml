@@ -5,7 +5,7 @@ var _color = draw_get_color();
 var _align = draw_get_halign();
 
 draw_set_color(c_white);
-draw_text(975,745,"v0.5");
+draw_text(975,745,"v0.6");
 
 
 // NIVEL

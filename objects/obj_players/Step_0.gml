@@ -18,7 +18,7 @@ if (i_cooldown_pompas < cooldown_pompas)
 if (i_cooldown_pompas == 0)
 {
 	i_cooldown_pompas = cooldown_pompas;
-	estado = ESTADOS.NORMAL;
+	estado = ESTADOS.IDLE;
 }
 
 
@@ -40,6 +40,11 @@ if ((object_index == obj_enemigo) && tecla_virtual_salto && en_el_suelo)
 
 // eje X
 mueve_eje_x = _origen_x * velocidad_x;
+if (object_index <> obj_enemigo) //para seleccionar luego el sprite de idle o corriendo
+	if (abs(mueve_eje_x) == 0)
+		estado = ESTADOS.IDLE;
+	else
+		estado = ESTADOS.NORMAL;
 	
 // eje Y
 velocidad_y += obj_settings.gravedad;
