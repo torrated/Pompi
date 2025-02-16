@@ -9,8 +9,8 @@
   "name":"obj_enemigo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"caracteres",
+    "path":"folders/Objects/caracteres.yy",
   },
   "parentObjectId":{
     "name":"obj_players",
