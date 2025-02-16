@@ -1,4 +1,4 @@
-/// @description
+/// @description Hace que la pompa vibre
 
 image_xscale = random_range(0.95,1.05);
 image_yscale = random_range(0.95,1.05);

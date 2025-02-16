@@ -1,5 +1,7 @@
 /// @description 
 
+if (instance_exists(obj_settings) && obj_settings.pausa) exit;
+
 tiempo_explosion -= 1;
 if (tiempo_explosion == 0)
 {
