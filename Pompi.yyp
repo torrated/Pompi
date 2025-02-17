@@ -31,7 +31,8 @@
   },
   "name":"Pompi",
   "resources":[
-    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
+    {"id":{"name":"Notas del async","path":"notes/Notas del async/Notas del async.yy",},},
+    {"id":{"name":"Notas generales","path":"notes/Notas generales/Notas generales.yy",},},
     {"id":{"name":"obj_colisiones_laterales","path":"objects/obj_colisiones_laterales/obj_colisiones_laterales.yy",},},
     {"id":{"name":"obj_colisiones_plataformas","path":"objects/obj_colisiones_plataformas/obj_colisiones_plataformas.yy",},},
     {"id":{"name":"obj_colisiones_superior","path":"objects/obj_colisiones_superior/obj_colisiones_superior.yy",},},
