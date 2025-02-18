@@ -5,7 +5,7 @@ var _color = draw_get_color();
 var _align = draw_get_halign();
 
 draw_set_color(c_white);
-draw_text(975,745,"v0.5");
+draw_text(975,745,"v0.6");
 
 
 // NIVEL
@@ -72,5 +72,15 @@ if (!instance_exists(obj_player_2) && (room <> Pantalla_de_Carga))
 }
 	
 
+// OTROS MENSAJES
+if (mostrar_mensaje)
+{	
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_text(display_get_gui_width()/2,display_get_gui_height()/2,mensaje);
+}
+
+
+// restaura valores anteriores
 draw_set_color(_color);
 draw_set_halign(_align);

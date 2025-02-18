@@ -11,3 +11,11 @@ alarma_0_inicial = 60;
 alarma_0 = alarma_0_inicial;
 alarma_1_inicial = 60;
 alarma_1 = alarma_1_inicial;
+
+
+
+function poner_en_pausa()
+{
+	pausa = !pausa;
+	pantalla_pausa = !pantalla_pausa;
+}

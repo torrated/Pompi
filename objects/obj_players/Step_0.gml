@@ -18,7 +18,12 @@ if (i_cooldown_pompas < cooldown_pompas)
 if (i_cooldown_pompas == 0)
 {
 	i_cooldown_pompas = cooldown_pompas;
-	estado = ESTADOS.NORMAL;
+	//estado = ESTADOS.IDLE;
+	if (object_index <> obj_enemigo) //para seleccionar luego el sprite de idle o corriendo
+	if (abs(mueve_eje_x) == 0)
+		estado = ESTADOS.IDLE;
+	else
+		estado = ESTADOS.NORMAL;
 }
 
 
@@ -39,7 +44,16 @@ if ((object_index == obj_enemigo) && tecla_virtual_salto && en_el_suelo)
 
 
 // eje X
-mueve_eje_x = _origen_x * velocidad_x;
+if (i_cooldown_pompas = cooldown_pompas)
+	mueve_eje_x = _origen_x * velocidad_x;
+else
+	mueve_eje_x = 0;
+	
+if (object_index <> obj_enemigo && i_cooldown_pompas = cooldown_pompas) //para seleccionar luego el sprite de idle o corriendo
+	if (abs(mueve_eje_x) == 0)
+		estado = ESTADOS.IDLE;
+	else
+		estado = ESTADOS.NORMAL;
 	
 // eje Y
 velocidad_y += obj_settings.gravedad;
@@ -79,7 +93,7 @@ if ((object_index == obj_player_1) && instance_exists(obj_controllers))
 {
 	if ((obj_controllers.ataque) && (i_cooldown_pompas == cooldown_pompas))
 	{
-		var _pompa = instance_create_layer(x+(64*image_xscale),y,"Pompas",obj_pompa);
+		var _pompa = instance_create_layer(x+(64*image_xscale),y-(sprite_height/2),"Pompas",obj_pompa);
 		_pompa.sentido = image_xscale;
 		_pompa.player = self;
 		i_cooldown_pompas -= 1;
