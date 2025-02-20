@@ -23,7 +23,7 @@
   ],
   "name":"spr_player_1_ataque",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Personajes",
     "path":"folders/Sprites/Personajes.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":38,
-    "yorigin":89,
+    "yorigin":88,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
