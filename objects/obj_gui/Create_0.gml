@@ -1,6 +1,6 @@
 /// @description 
 
-
+tiempo = 0;
 tiempo_i = 0;
 mostrar_mensaje = false;
 

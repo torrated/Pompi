@@ -10,8 +10,8 @@
   "name":"obj_pantalla_completa",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"persistentes",
+    "path":"folders/Objects/persistentes.yy",
   },
   "parentObjectId":null,
   "persistent":true,
