@@ -11,8 +11,8 @@
   "name":"obj_pantalla_de_carga",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"persistentes",
+    "path":"folders/Objects/persistentes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

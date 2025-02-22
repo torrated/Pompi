@@ -6,22 +6,19 @@ var _columna = 736;
 
 with (obj_controllers)
 {
-	//draw_text(960,_linea,"obj_controllers"); _linea += _i;
-	//draw_text(960,_linea,"eje x: "+string(eje_x)); _linea += _i;
-	//draw_text(960,_linea,"ataque: "+string(ataque)); _linea += _i;
-	//draw_text(960,_linea,"salto: "+string(salto)); _linea += _i;
-	//draw_text(960,_linea,"escape: "+string(escape)); _linea += _i;
+	//if (player1 <> noone)
+	//{
+	//	draw_text(_columna,_linea,"player1.eje_x: "+string(controles[player1].eje_x)); _linea += _i;
+	//	draw_text(_columna,_linea,"player1.ataque: "+string(controles[player1].ataque)); _linea += _i;
+	//	draw_text(_columna,_linea,"player1.salto: "+string(controles[player1].salto)); _linea += _i;
+	//}
 	// _linea += _i;
-	//draw_text(_columna,_linea,"gamepad_get_device_count(): "+string(gamepad_get_device_count())); _linea += _i;
-}
-
-with (obj_player_1)
-{
-	//draw_text(_columna,_linea,"obj_player_1"); _linea += _i;
-	//draw_text(960,_linea,"vidas: "+string(vidas)); _linea += _i;
-	//draw_text(_columna,_linea,"altura_salto: "+string(altura_salto)); _linea += _i;
-	//draw_text(_columna,_linea,"velocidad_y: "+string(velocidad_y)); _linea += _i;
-
+	//if (player2 <> noone)
+	//{
+	//	draw_text(_columna,_linea,"player2.eje_x: "+string(controles[player2].eje_x)); _linea += _i;
+	//	draw_text(_columna,_linea,"player2.ataque: "+string(controles[player2].ataque)); _linea += _i;
+	//	draw_text(_columna,_linea,"player2.salto: "+string(controles[player2].salto)); _linea += _i;
+	//}
 }
 
 with (obj_enemigo)

@@ -33,3 +33,5 @@ enum ESTADOS
 estado = ESTADOS.NORMAL;
 
 puntos = 0;
+
+control = noone;

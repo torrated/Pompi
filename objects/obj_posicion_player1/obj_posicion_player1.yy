@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_posicion_player1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_posicion_player1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"no-persistentes",
+    "path":"folders/Objects/no-persistentes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

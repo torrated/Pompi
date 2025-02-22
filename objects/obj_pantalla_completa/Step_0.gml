@@ -1,6 +1,6 @@
 /// @description 
 
-if (pantalla_completa && room <> room_last)
+if (pantalla_completa && room <> room_last && room <> Menu)
 {
 	if (instance_exists(obj_player_1))
 		obj_player_1.puntos += puntos_player_1;
