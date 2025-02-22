@@ -95,7 +95,10 @@ if (object_index == obj_player_1 || object_index == obj_player_2)
 	{
 		var _pompa = instance_create_layer(x+(64*image_xscale),y-(sprite_height/2),"Pompas",obj_pompa);
 		_pompa.sentido = image_xscale;
-		_pompa.player = self;
+		if (object_index == obj_player_1)
+			_pompa.player = obj_player_1;
+		if (object_index == obj_player_2)
+			_pompa.player = obj_player_2;
 		i_cooldown_pompas -= 1;
 		if (sprite_ataque <> noone)
 			estado = ESTADOS.ATAQUE;

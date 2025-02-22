@@ -6,8 +6,8 @@
   "name":"obj_posicion_player1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"no-persistentes",
+    "path":"folders/Objects/no-persistentes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
