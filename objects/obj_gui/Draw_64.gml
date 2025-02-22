@@ -49,7 +49,7 @@ if (room <> Pantalla_de_Carga)
 			draw_circle(15+(_i*31),750,16,true);
 		}
 	}
-	else
+	else if (room <> Menu)
 	{
 		draw_set_color(c_lime);
 		draw_set_halign(fa_center);
@@ -78,7 +78,7 @@ if (room <> Pantalla_de_Carga)
 		}
 	}
 		
-	else
+	else if (room <> Menu)
 	{
 		draw_set_color(c_aqua);
 		draw_set_halign(fa_center);
