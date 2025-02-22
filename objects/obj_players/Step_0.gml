@@ -18,7 +18,6 @@ if (i_cooldown_pompas < cooldown_pompas)
 if (i_cooldown_pompas == 0)
 {
 	i_cooldown_pompas = cooldown_pompas;
-	//estado = ESTADOS.IDLE;
 	if (object_index <> obj_enemigo) //para seleccionar luego el sprite de idle o corriendo
 	if (abs(mueve_eje_x) == 0)
 		estado = ESTADOS.IDLE;
