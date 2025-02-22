@@ -1,21 +1,25 @@
 /// @description 
 
-with (obj_controllers)
+var _halign = draw_get_halign();
+var _color = draw_get_color();
+
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+
+for (var _i = 0; _i < array_length(opciones); _i++)
 {
-	var _halign = draw_get_halign();
-	draw_set_halign(fa_center);
-	if (player1 <> noone)
-	{
-		draw_text(display_get_gui_width()/2,200,"player1.eje_x: "+string(controles[player1].eje_x));
-		draw_text(display_get_gui_width()/2,220,"player1.ataque: "+string(controles[player1].ataque));
-		draw_text(display_get_gui_width()/2,240,"player1.salto: "+string(controles[player1].salto));
-	}
-	if (player2 <> noone)
-	{
-		draw_text(display_get_gui_width()/2,280,"player2.eje_x: "+string(controles[player2].eje_x));
-		draw_text(display_get_gui_width()/2,300,"player2.ataque: "+string(controles[player2].ataque));
-		draw_text(display_get_gui_width()/2,320,"player2.salto: "+string(controles[player2].salto));
-	}
-	
-	draw_set_halign(_halign);
+	var _item = opciones[_i];
+	draw_text(312+(200*_item.posicion),
+	          300+(_i*50),
+			  _item.texto);
 }
+
+if (juego_puede_comenzar)
+	draw_set_color(c_white);
+else
+	draw_set_color(c_gray);
+
+draw_text(display_get_gui_width()/2,500,"Press attack to start the game");
+
+draw_set_halign(_halign);
+draw_set_color(_color);

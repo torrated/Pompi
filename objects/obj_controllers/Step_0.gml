@@ -30,15 +30,23 @@ controles = [
 }
 ];
 
-if (gamepad1 == noone && gamepad2 == noone)
-	player1 = 0; //teclado
-else
-	if (gamepad2 == noone)
-	{
-		player1 = 1; //gamepad1
-	}
-	else
-	{
-		player1 = 1; //gamepad1
-		player2 = 2; //gamepad2
-	}
+player1 = noone;
+player2 = noone;
+
+with (obj_menu) // asigna a cada jugador el control seleccionado en el menu
+{
+	if (opciones[0].posicion == 0)
+		other.player1 = 0;
+	if (opciones[0].posicion == 2)
+		other.player2 = 0;
+	
+	if (opciones[1].posicion == 0)
+		other.player1 = 1;
+	if (opciones[1].posicion == 2)
+		other.player2 = 1;
+	
+	if (opciones[2].posicion == 0)
+		other.player1 = 2;
+	if (opciones[2].posicion == 2)
+		other.player2 = 2;
+}
