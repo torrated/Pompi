@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_3342C6F0","path":"rooms/Nivel_1/Nivel_1.yy",},
     {"name":"inst_7E6E52DD","path":"rooms/Nivel_1/Nivel_1.yy",},
     {"name":"inst_4DFE71F4","path":"rooms/Nivel_1/Nivel_1.yy",},
     {"name":"inst_75C61A86","path":"rooms/Nivel_1/Nivel_1.yy",},
@@ -33,7 +32,6 @@
         {"$GMRInstance":"v1","%Name":"inst_4B251BA9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B251BA9","objectId":{"name":"obj_muestra_nivel","path":"objects/obj_muestra_nivel/obj_muestra_nivel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":48.0,},
       ],"layers":[],"name":"Miscelanea","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Players","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_3342C6F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3342C6F0","objectId":{"name":"obj_player_1","path":"objects/obj_player_1/obj_player_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":150.0,"y":719.0,},
         {"$GMRInstance":"v1","%Name":"inst_35A0B8B4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35A0B8B4","objectId":{"name":"obj_posicion_player1","path":"objects/obj_posicion_player1/obj_posicion_player1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":720.0,},
         {"$GMRInstance":"v1","%Name":"inst_55471FC4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55471FC4","objectId":{"name":"obj_posicion_player2","path":"objects/obj_posicion_player2/obj_posicion_player2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":915.0,"y":706.0,},
       ],"layers":[],"name":"Players","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

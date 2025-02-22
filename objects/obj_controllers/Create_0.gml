@@ -14,10 +14,16 @@ player1 = noone;
 player2 = noone;
 
 if (gamepad_is_connected(0))
+{
 	gamepad1 = 0;
+	gamepad_set_axis_deadzone(gamepad1, 0.2);
+}
 	
 if (gamepad_is_connected(1))
+{
 	gamepad2 = 1;
+	gamepad_set_axis_deadzone(gamepad2, 0.2);
+}
 
 controles = [
 { //teclado
