@@ -13,7 +13,7 @@ with (obj_controllers)
 	};
 	if (controles[1].eje_x <> 0 && other.delay_1 == 0)
 	{
-		other.opciones[1].posicion = clamp(other.opciones[1].posicion+controles[1].eje_x,0,2);2);
+		other.opciones[1].posicion = clamp(other.opciones[1].posicion+controles[1].eje_x,0,2);
 		other.delay_1 = other.tiempo_delay;
 	};
 	if (controles[2].eje_x <> 0 && other.delay_2 == 0)
