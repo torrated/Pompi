@@ -10,4 +10,4 @@ if (instance_exists(obj_posicion_player2))
 
 estado = ESTADOS.NORMAL;
 golpeado_por = [];
-image_xscale = 1;
+image_xscale = -1;
