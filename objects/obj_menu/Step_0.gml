@@ -11,20 +11,14 @@ with (obj_controllers)
 		other.opciones[0].posicion = clamp(other.opciones[0].posicion+controles[0].eje_x,0,2);
 		other.delay_0 = other.tiempo_delay;
 	};
-	if (abs(controles[1].eje_x) > 0.4 && other.delay_1 == 0)
+	if (controles[1].eje_x <> 0 && other.delay_1 == 0)
 	{
-		if (controles[1].eje_x > 0)
-			other.opciones[1].posicion = clamp(other.opciones[1].posicion+1,0,2);
-		else
-			other.opciones[1].posicion = clamp(other.opciones[1].posicion-1,0,2);
+		other.opciones[1].posicion = clamp(other.opciones[1].posicion+controles[1].eje_x,0,2);2);
 		other.delay_1 = other.tiempo_delay;
 	};
-	if (abs(controles[2].eje_x) > 0.4 && other.delay_2 == 0)
+	if (controles[2].eje_x <> 0 && other.delay_2 == 0)
 	{
-		if (controles[2].eje_x > 0)
-			other.opciones[2].posicion = clamp(other.opciones[2].posicion+1,0,2);
-		else
-			other.opciones[2].posicion = clamp(other.opciones[2].posicion-1,0,2);
+		other.opciones[2].posicion = clamp(other.opciones[2].posicion+controles[2].eje_x,0,2);
 		other.delay_2 = other.tiempo_delay;
 	};
 }
