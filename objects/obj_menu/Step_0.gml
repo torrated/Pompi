@@ -28,6 +28,8 @@ with (obj_controllers)
 juego_puede_comenzar = false;
 if (opciones[0].posicion == 0 && opciones[1].posicion == 1 && opciones[2].posicion == 1)
 	juego_puede_comenzar = true;
+if (opciones[0].posicion == 2 && opciones[1].posicion == 1 && opciones[2].posicion == 1)
+	juego_puede_comenzar = true;
 
 if (opciones[0].posicion == 0 && opciones[1].posicion == 2 && opciones[2].posicion == 1)
 	juego_puede_comenzar = true;
@@ -39,6 +41,8 @@ if (opciones[0].posicion == 0 && opciones[1].posicion == 1 && opciones[2].posici
 
 if (opciones[0].posicion == 1 && opciones[1].posicion == 0 && opciones[2].posicion == 1)
 	juego_puede_comenzar = true;
+if (opciones[0].posicion == 1 && opciones[1].posicion == 2 && opciones[2].posicion == 1)
+	juego_puede_comenzar = true;
 
 if (opciones[0].posicion == 2 && opciones[1].posicion == 0 && opciones[2].posicion == 1)
 	juego_puede_comenzar = true;
@@ -49,6 +53,8 @@ if (opciones[0].posicion == 1 && opciones[1].posicion == 0 && opciones[2].posici
 
 
 if (opciones[0].posicion == 1 && opciones[1].posicion == 1 && opciones[2].posicion == 0)
+	juego_puede_comenzar = true;
+if (opciones[0].posicion == 1 && opciones[1].posicion == 1 && opciones[2].posicion == 2)
 	juego_puede_comenzar = true;
 
 if (opciones[0].posicion == 2 && opciones[1].posicion == 1 && opciones[2].posicion == 0)
@@ -63,6 +69,8 @@ if (juego_puede_comenzar)
 	with (obj_controllers)
 	{
 		if (player1 <> noone && controles[player1].ataque)
+			room_goto(Nivel_1);
+		else if (player2 <> noone && controles[player2].ataque)
 			room_goto(Nivel_1);
 	}
 }
