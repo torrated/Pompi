@@ -12,4 +12,7 @@ if (enemigo <> noone)
 			obj_pantalla_completa.puntos_player_2 += puntos;
 	}
 }
-instance_destroy(self,true);
+
+
+if !(cooldown)
+	instance_destroy(self,true);
