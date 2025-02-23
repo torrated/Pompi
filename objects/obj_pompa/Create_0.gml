@@ -10,7 +10,7 @@ tiempo_explosion = 60;
 enemigo = noone;
 
 player = noone;
-puntos = 0;
+puntos = 100;
 
 alarm[1] = 1;
 
