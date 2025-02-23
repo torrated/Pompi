@@ -81,6 +81,16 @@ else
 					velocidad_y_inicial
 					);
 
+if (y-yprevious == 0 && x-xprevious == 0)
+{
+	var _colisiones = instance_place(x,y,global.array_colisiones_normal)
+	while (_colisiones <> noone)
+	{
+		x -= sign(image_xscale);
+		y -= 1;
+		_colisiones = instance_place(x,y,global.array_colisiones_normal)
+	}
+}
 
 // sprites de sentido
 if (mueve_eje_x <> 0)
