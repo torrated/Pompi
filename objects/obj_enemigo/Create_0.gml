@@ -7,7 +7,7 @@ sprite_quieto = spr_enemigo_idle;
 sprite_movimiento = spr_enemigo;
 sprite_salto = spr_enemigo;
 
-puntos = 100;
+puntos = 1000;
 
 velocidad_x_inicial = 3;
 

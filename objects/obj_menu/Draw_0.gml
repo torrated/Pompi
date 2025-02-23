@@ -15,13 +15,13 @@ for (var _i = 0; _i < array_length(opciones); _i++)
 }
 
 draw_set_color(c_gray);
-draw_text(display_get_gui_width()/2,200,"Move LEFT or RIGHT to select your player\nKeep in the middle to not use that input");
+draw_text(display_get_gui_width()/2,250,"Move LEFT or RIGHT to select your player\nKeep in the middle to not use that input");
 
 if (juego_puede_comenzar)
 	draw_set_color(c_red);
 else
 	draw_set_color(c_gray);
-draw_text(display_get_gui_width()/2,500,"Press attack to start the game");
+draw_text(display_get_gui_width()/2,520,"Press attack to start the game");
 
 if (opciones[0].posicion == 0 || opciones[1].posicion == 0 || opciones[2].posicion == 0)
 {

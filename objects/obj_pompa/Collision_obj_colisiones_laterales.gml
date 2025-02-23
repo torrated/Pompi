@@ -1,6 +1,5 @@
 /// @description 
-
-if (enemigo <> noone)
+if (cooldown)
 {
 	var _puntos = instance_create_layer(x,y,"Puntos",obj_puntos);
 	_puntos.puntos = puntos;
@@ -11,8 +10,5 @@ if (enemigo <> noone)
 		if (player.object_index == obj_player_2)
 			obj_pantalla_completa.puntos_player_2 += puntos;
 	}
-}
-
-
-if !(cooldown)
 	instance_destroy();
+}
