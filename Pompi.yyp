@@ -35,6 +35,7 @@
   },
   "name":"Pompi",
   "resources":[
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Notas del async","path":"notes/Notas del async/Notas del async.yy",},},
     {"id":{"name":"Notas generales","path":"notes/Notas generales/Notas generales.yy",},},
     {"id":{"name":"obj_colisiones_laterales","path":"objects/obj_colisiones_laterales/obj_colisiones_laterales.yy",},},
