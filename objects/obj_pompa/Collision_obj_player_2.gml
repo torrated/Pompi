@@ -15,4 +15,4 @@ if (enemigo <> noone)
 
 
 if !(cooldown)
-	instance_destroy(self,true);
+	instance_destroy();

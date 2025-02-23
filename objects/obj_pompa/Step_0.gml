@@ -9,7 +9,7 @@ if (velocidad_horizontal > 1)
 	var _lista = move_and_collide(velocidad_horizontal * sentido,0,global.array_colisiones_normal);
 	for (var _i = 1; _i <= 8; _i++)
 	{
-		if (collision_circle(xprevious+((x-xprevious)/2)/_i,y,24,obj_enemigo,false,true) && puntos == 0)
+		if (collision_circle(xprevious+((x-xprevious)/2)/_i,y,24,obj_enemigo,false,true) && puntos == 100)
 		{
 			enemigo = collision_circle((xprevious+((x-xprevious)/2))/_i,y,24,obj_enemigo,false,true);
 			if (instance_exists(enemigo))
