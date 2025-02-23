@@ -81,6 +81,16 @@ else
 					velocidad_y_inicial
 					);
 
+if (y-yprevious == 0 && x-xprevious == 0)
+{
+	var _colisiones = instance_place(x,y,global.array_colisiones_normal)
+	while (_colisiones <> noone)
+	{
+		x -= sign(image_xscale);
+		y -= 1;
+		_colisiones = instance_place(x,y,global.array_colisiones_normal)
+	}
+}
 
 // sprites de sentido
 if (mueve_eje_x <> 0)
@@ -92,7 +102,8 @@ if (object_index == obj_player_1 || object_index == obj_player_2)
 {
 	if ((obj_controllers.controles[control].ataque) && (i_cooldown_pompas == cooldown_pompas))
 	{
-		var _pompa = instance_create_layer(x+(64*image_xscale),y-(sprite_height/2),"Pompas",obj_pompa);
+		//var _pompa = instance_create_layer(x+(64*image_xscale),y-(sprite_height/2),"Pompas",obj_pompa);
+		var _pompa = instance_create_layer(x,y-(sprite_height/2),"Pompas",obj_pompa);
 		_pompa.sentido = image_xscale;
 		if (object_index == obj_player_1)
 			_pompa.player = obj_player_1;

@@ -1,4 +1,4 @@
-/// @description 
+/// @description Devuelve a la vida al enemigo si no explotada
 
 if (instance_exists(obj_settings) && obj_settings.pausa) exit;
 
