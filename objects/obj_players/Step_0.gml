@@ -44,7 +44,9 @@ if ((object_index == obj_enemigo) && tecla_virtual_salto && en_el_suelo)
 
 // eje X
 if (i_cooldown_pompas = cooldown_pompas)
+{
 	mueve_eje_x = _origen_x * velocidad_x;
+}
 else
 	mueve_eje_x = 0;
 	
@@ -60,37 +62,21 @@ velocidad_y = clamp(velocidad_y,-altura_salto,obj_settings.gravedad);
 if (en_el_suelo)
 	velocidad_y -= _origen_y * altura_salto;
 		
+var _array = noone;
 if (velocidad_y < 0)
-	move_and_collide(mueve_eje_x,
-						velocidad_y,
-						global.array_colisiones_salto,
-						undefined,
-						undefined,
-						undefined,
-						velocidad_x_inicial,
-						velocidad_y_inicial
-						);
+	_array = global.array_colisiones_salto;
 else
-	move_and_collide(mueve_eje_x,
-					velocidad_y,
-					global.array_colisiones_normal,
-					undefined,
-					undefined,
-					undefined,
-					velocidad_x_inicial,
-					velocidad_y_inicial
-					);
+	_array = global.array_colisiones_normal;
 
-if (y-yprevious == 0 && x-xprevious == 0)
-{
-	var _colisiones = instance_place(x,y,global.array_colisiones_normal)
-	while (_colisiones <> noone)
-	{
-		x -= sign(image_xscale);
-		y -= 1;
-		_colisiones = instance_place(x,y,global.array_colisiones_normal)
-	}
-}
+move_and_collide(mueve_eje_x,
+				velocidad_y,
+				_array,
+				undefined,
+				undefined,
+				undefined,
+				velocidad_x_inicial,
+				velocidad_y_inicial
+				);
 
 // sprites de sentido
 if (mueve_eje_x <> 0)
