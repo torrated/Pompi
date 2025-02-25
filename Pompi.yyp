@@ -61,6 +61,7 @@
     {"id":{"name":"Nivel_1","path":"rooms/Nivel_1/Nivel_1.yy",},},
     {"id":{"name":"Nivel_2","path":"rooms/Nivel_2/Nivel_2.yy",},},
     {"id":{"name":"Nivel_3","path":"rooms/Nivel_3/Nivel_3.yy",},},
+    {"id":{"name":"Nivel_4","path":"rooms/Nivel_4/Nivel_4.yy",},},
     {"id":{"name":"Pantalla_de_Carga","path":"rooms/Pantalla_de_Carga/Pantalla_de_Carga.yy",},},
     {"id":{"name":"scr_animacion1","path":"scripts/scr_animacion1/scr_animacion1.yy",},},
     {"id":{"name":"scr_path_1","path":"scripts/scr_path_1/scr_path_1.yy",},},
@@ -93,6 +94,7 @@
     {"roomId":{"name":"Nivel_1","path":"rooms/Nivel_1/Nivel_1.yy",},},
     {"roomId":{"name":"Nivel_2","path":"rooms/Nivel_2/Nivel_2.yy",},},
     {"roomId":{"name":"Nivel_3","path":"rooms/Nivel_3/Nivel_3.yy",},},
+    {"roomId":{"name":"Nivel_4","path":"rooms/Nivel_4/Nivel_4.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
