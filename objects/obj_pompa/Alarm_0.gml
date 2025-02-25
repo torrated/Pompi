@@ -9,7 +9,7 @@ if (tiempo_explosion == 0)
 	{
 		instance_activate_object(enemigo);
 		enemigo.x = x;
-		enemigo.y = y;
+		enemigo.y = y+enemigo.sprite_height;
 	}
 	instance_destroy(self,true);
 }

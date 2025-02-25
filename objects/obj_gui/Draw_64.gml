@@ -6,7 +6,7 @@ var _align = draw_get_halign();
 
 draw_set_color(c_white);
 draw_set_halign(fa_center)
-draw_text(display_get_gui_width()/2,745,"v0.8.1");
+draw_text(display_get_gui_width()/2,745,"v0.9");
 
 
 // NIVEL
@@ -27,7 +27,8 @@ if (room <> Pantalla_de_Carga && room <> Menu)
 if (instance_exists(obj_settings) && obj_settings.pantalla_pausa)
 {
 	draw_set_color(c_white);
-	draw_text(440,375,"PAUSE");
+	draw_set_halign(fa_center);
+	draw_text(display_get_gui_width()/2,display_get_gui_height()/2,"PAUSE");
 }
 	
 
