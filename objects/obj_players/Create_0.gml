@@ -10,8 +10,11 @@ velocidad_x = velocidad_x_inicial;
 velocidad_y = velocidad_y_inicial;
 
 en_el_suelo = false;
+
 cooldown_pompas = 15;
 i_cooldown_pompas = cooldown_pompas;
+cooldown_salto = 15;
+i_cooldown_salto = cooldown_salto;
 
 sprite_quieto = noone;
 sprite_movimiento = noone;
