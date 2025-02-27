@@ -2,7 +2,7 @@
 
 opciones = [
 	{
-		texto: "keyboard",
+		texto: "keyboard\n(W,A,D,SPACE)",
 		valor: 0,
 		posicion: 1
 	},
