@@ -9,6 +9,6 @@ sprite_ataque = spr_player_2_ataque;
 sprite_muerto = spr_player_2_muerto;
 
 vidas = 2;
-golpeado_por = [];
+//golpeado_por = [];
 
 control = obj_controllers.player2;

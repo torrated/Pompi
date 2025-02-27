@@ -38,3 +38,5 @@ estado = ESTADOS.NORMAL;
 puntos = 0;
 
 control = noone;
+
+golpeado_por = [];
