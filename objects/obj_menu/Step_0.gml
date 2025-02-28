@@ -69,8 +69,14 @@ if (juego_puede_comenzar)
 	with (obj_controllers)
 	{
 		if (player1 <> noone && controles[player1].ataque)
-			room_goto(Nivel_1);
+		{
+			obj_settings.estado = ESTADO_PARTIDA.SECUENCIA;
+			room_goto(How_to_play);
+		}
 		else if (player2 <> noone && controles[player2].ataque)
-			room_goto(Nivel_1);
+		{
+			obj_settings.estado = ESTADO_PARTIDA.SECUENCIA;
+			room_goto(How_to_play);
+		}
 	}
 }

@@ -1,6 +1,6 @@
 /// @description 
 
-if (instance_exists(obj_settings) && obj_settings.pausa) exit;
+if (instance_exists(obj_settings) && obj_settings.estado <> ESTADO_PARTIDA.NORMAL) exit;
 
 if (velocidad_horizontal > 1)
 {
