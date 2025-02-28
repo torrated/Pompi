@@ -24,7 +24,7 @@ if (room <> Pantalla_de_Carga && room <> Menu)
 
 
 // PAUSE
-if (instance_exists(obj_settings) && obj_settings.pantalla_pausa)
+if (instance_exists(obj_settings) && obj_settings.estado == ESTADO_PARTIDA.PAUSA)
 {
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
