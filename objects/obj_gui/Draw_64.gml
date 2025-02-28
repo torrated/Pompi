@@ -1,13 +1,15 @@
 /// @description
-
-// VERSION
 var _color = draw_get_color();
 var _align = draw_get_halign();
 
-draw_set_color(c_white);
-draw_set_halign(fa_center)
-draw_text(display_get_gui_width()/2,745,"v0.10");
 
+// VERSION
+if (room <> Pantalla_de_Carga && room <> How_to_play)
+{
+	draw_set_color(c_white);
+	draw_set_halign(fa_center)
+	draw_text(display_get_gui_width()/2,745,"v0.10");
+}
 
 // NIVEL
 if (room <> Pantalla_de_Carga && room <> Menu && room <> How_to_play)
