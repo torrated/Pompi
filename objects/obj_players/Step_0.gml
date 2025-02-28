@@ -71,7 +71,7 @@ if (object_index <> obj_enemigo && i_cooldown_pompas = cooldown_pompas) //para s
 velocidad_y += obj_settings.gravedad;
 velocidad_y = clamp(velocidad_y,-altura_salto,obj_settings.gravedad);
 if (en_el_suelo)
-	if (i_cooldown_salto == cooldown_salto-1)
+	if (i_cooldown_salto == cooldown_salto-1 || object_index == obj_enemigo)
 		velocidad_y -= _origen_y * altura_salto;
 
 var _array = noone;
