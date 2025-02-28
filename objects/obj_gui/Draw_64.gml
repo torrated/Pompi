@@ -10,7 +10,7 @@ draw_text(display_get_gui_width()/2,745,"v0.10");
 
 
 // NIVEL
-if (room <> Pantalla_de_Carga && room <> Menu)
+if (room <> Pantalla_de_Carga && room <> Menu && room <> How_to_play)
 {
 	var _outline = 1.1;
 	var _nivel = room_get_name(room);
@@ -50,7 +50,7 @@ if (room <> Pantalla_de_Carga)
 			draw_circle(15+(_i*31),750,16,true);
 		}
 	}
-	else if (room <> Menu)
+	else if (room <> Menu && room <> How_to_play)
 	{
 		draw_set_color(c_lime);
 		draw_set_halign(fa_center);
@@ -79,7 +79,7 @@ if (room <> Pantalla_de_Carga)
 		}
 	}
 		
-	else if (room <> Menu)
+	else if (room <> Menu && room <> How_to_play)
 	{
 		draw_set_color(c_aqua);
 		draw_set_halign(fa_center);

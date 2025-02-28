@@ -16,7 +16,6 @@ switch(async_load[? "event_type"])
 									gamepad_set_axis_deadzone(gamepad2, 0.2);
 								}
 								
-								//obj_settings.poner_en_pausa();
 								break;
 	case "gamepad lost":
 								if (async_load[? "pad_index"] == 0)
@@ -30,6 +29,5 @@ switch(async_load[? "event_type"])
 									gamepad2 = noone;
 								}
 								
-								//obj_settings.poner_en_pausa();
 								break;
 }

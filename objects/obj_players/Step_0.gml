@@ -100,7 +100,6 @@ if (object_index == obj_player_1 || object_index == obj_player_2)
 {
 	if ((obj_controllers.controles[control].ataque) && (i_cooldown_pompas == cooldown_pompas))
 	{
-		//var _pompa = instance_create_layer(x+(64*image_xscale),y-(sprite_height/2),"Pompas",obj_pompa);
 		var _pompa = instance_create_layer(x,y-(sprite_height/2),"Pompas",obj_pompa);
 		_pompa.sentido = image_xscale;
 		if (object_index == obj_player_1)

@@ -1,8 +1,6 @@
 /// @description 
 
 gravedad = 10;
-//pausa = false;
-//pantalla_pausa = false;
 
 global.array_colisiones_normal = [obj_colisiones_plataformas,obj_colisiones_laterales];
 global.array_colisiones_salto = [obj_colisiones_laterales,obj_colisiones_superior];
@@ -21,8 +19,8 @@ function poner_en_pausa()
 	{
 		case ESTADO_PARTIDA.NORMAL: estado = ESTADO_PARTIDA.PAUSA; break;
 		case ESTADO_PARTIDA.PAUSA: estado = ESTADO_PARTIDA.NORMAL; break;
+		case ESTADO_PARTIDA.SECUENCIA: estado = ESTADO_PARTIDA.NORMAL; room_goto(Nivel_1); break;
 	}
-	//pantalla_pausa = !pantalla_pausa;
 };
 
 enum ESTADO_PARTIDA
