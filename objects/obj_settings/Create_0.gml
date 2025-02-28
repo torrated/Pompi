@@ -10,7 +10,7 @@ alarma_0 = alarma_0_inicial;
 alarma_1_inicial = 60;
 alarma_1 = alarma_1_inicial;
 
-temporizador_fantasma = 60*10;
+temporizador_fantasma = 60*15;
 i_temporizador_fantasma = temporizador_fantasma;
 
 function poner_en_pausa()
