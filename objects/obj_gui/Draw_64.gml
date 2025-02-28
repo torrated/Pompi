@@ -1,13 +1,15 @@
 /// @description
-
-// VERSION
 var _color = draw_get_color();
 var _align = draw_get_halign();
 
-draw_set_color(c_white);
-draw_set_halign(fa_center)
-draw_text(display_get_gui_width()/2,745,"v0.10");
 
+// VERSION
+if (room <> Pantalla_de_Carga && room <> How_to_play)
+{
+	draw_set_color(c_white);
+	draw_set_halign(fa_center)
+	draw_text(display_get_gui_width()/2,745,"v1.0");
+}
 
 // NIVEL
 if (room <> Pantalla_de_Carga && room <> Menu && room <> How_to_play)
@@ -87,6 +89,14 @@ if (room <> Pantalla_de_Carga)
 	}
 }
 
+
+//FIN DE PARTIDA
+if (instance_exists(obj_settings) && obj_settings.estado == ESTADO_PARTIDA.END)
+{
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_text(display_get_gui_width()/2,display_get_gui_height()/2,"YOU WON!");
+}
 
 // OTROS MENSAJES
 if (mostrar_mensaje)
