@@ -1,3 +1,3 @@
 /// @description 
 
-room_goto(Nivel_4);
+game_restart();

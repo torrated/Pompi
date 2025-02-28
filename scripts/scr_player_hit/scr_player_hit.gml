@@ -9,7 +9,7 @@ function scr_player_hit(_player)
 	
 	//poner todo en pausa
 	if (instance_exists(obj_settings))
-		obj_settings.pausa = true;
+		obj_settings.estado = ESTADO_PARTIDA.PLAYER_HIT;
 	
 	//reducir las vidas en 1
 	_player.vidas -= 1;

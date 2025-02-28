@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"seq_howtoplay_Events4",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"seq_howtoplay_Events4",
+  "parent":{
+    "name":"Pompi",
+    "path":"Pompi.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

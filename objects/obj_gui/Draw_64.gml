@@ -1,16 +1,18 @@
 /// @description
-
-// VERSION
 var _color = draw_get_color();
 var _align = draw_get_halign();
 
-draw_set_color(c_white);
-draw_set_halign(fa_center)
-draw_text(display_get_gui_width()/2,745,"v0.9");
 
+// VERSION
+if (room <> Pantalla_de_Carga && room <> How_to_play)
+{
+	draw_set_color(c_white);
+	draw_set_halign(fa_center)
+	draw_text(display_get_gui_width()/2,745,"v1.0");
+}
 
 // NIVEL
-if (room <> Pantalla_de_Carga && room <> Menu)
+if (room <> Pantalla_de_Carga && room <> Menu && room <> How_to_play)
 {
 	var _outline = 1.1;
 	var _nivel = room_get_name(room);
@@ -24,7 +26,7 @@ if (room <> Pantalla_de_Carga && room <> Menu)
 
 
 // PAUSE
-if (instance_exists(obj_settings) && obj_settings.pantalla_pausa)
+if (instance_exists(obj_settings) && obj_settings.estado == ESTADO_PARTIDA.PAUSA)
 {
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
@@ -50,7 +52,7 @@ if (room <> Pantalla_de_Carga)
 			draw_circle(15+(_i*31),750,16,true);
 		}
 	}
-	else if (room <> Menu)
+	else if (room <> Menu && room <> How_to_play)
 	{
 		draw_set_color(c_lime);
 		draw_set_halign(fa_center);
@@ -79,7 +81,7 @@ if (room <> Pantalla_de_Carga)
 		}
 	}
 		
-	else if (room <> Menu)
+	else if (room <> Menu && room <> How_to_play)
 	{
 		draw_set_color(c_aqua);
 		draw_set_halign(fa_center);
@@ -87,6 +89,14 @@ if (room <> Pantalla_de_Carga)
 	}
 }
 
+
+//FIN DE PARTIDA
+if (instance_exists(obj_settings) && obj_settings.estado == ESTADO_PARTIDA.END)
+{
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_text(display_get_gui_width()/2,display_get_gui_height()/2,"YOU WON!");
+}
 
 // OTROS MENSAJES
 if (mostrar_mensaje)

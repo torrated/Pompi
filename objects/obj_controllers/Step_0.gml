@@ -30,8 +30,11 @@ controles = [
 }
 ];
 
-player1 = noone;
-player2 = noone;
+if (instance_exists(obj_menu))
+{
+	player1 = noone;
+	player2 = noone;
+}
 
 with (obj_menu) // asigna a cada jugador el control seleccionado en el menu
 {
