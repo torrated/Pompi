@@ -8,7 +8,7 @@ if (room <> Pantalla_de_Carga && room <> How_to_play)
 {
 	draw_set_color(c_white);
 	draw_set_halign(fa_center)
-	draw_text(display_get_gui_width()/2,745,"v0.10");
+	draw_text(display_get_gui_width()/2,745,"v1.0");
 }
 
 // NIVEL
