@@ -88,6 +88,14 @@ if (room <> Pantalla_de_Carga)
 }
 
 
+//FIN DE PARTIDA
+if (instance_exists(obj_settings) && obj_settings.estado == ESTADO_PARTIDA.END)
+{
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_text(display_get_gui_width()/2,display_get_gui_height()/2,"YOU WON!");
+}
+
 // OTROS MENSAJES
 if (mostrar_mensaje)
 {	

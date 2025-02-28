@@ -8,6 +8,6 @@ objetos_a_cargar = [
 		obj_pantalla_completa
 ];
 
-espera_carga_completa = 1 * 60; // 60 = 1 segundo
+espera_carga_completa = 1 * 10; // 60 = 1 segundo
 todo_cargado = true;
 muestra_carga_completa = false;

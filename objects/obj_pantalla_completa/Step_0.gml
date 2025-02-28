@@ -1,6 +1,6 @@
 /// @description 
 
-if (pantalla_completa && room <> Menu && room <> How_to_play)
+if (pantalla_completa && room <> Menu && room <> How_to_play && obj_settings.estado <> ESTADO_PARTIDA.END)
 {
 	if (instance_exists(obj_player_1))
 		obj_player_1.puntos += puntos_player_1;
@@ -12,8 +12,8 @@ if (pantalla_completa && room <> Menu && room <> How_to_play)
 	}
 	else
 	{
-		obj_settings.estado = ESTADO_PARTIDA.PAUSA;
-		obj_gui.muestra_mensaje_tiempo("You won!",9999);
+		obj_settings.estado = ESTADO_PARTIDA.END;
+		alarm[0] = 120;
 	}
 };
 
